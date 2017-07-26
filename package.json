@@ -1,0 +1,28 @@
+{
+  "name": "communal-mlas-list",
+  "version": "1.0.0",
+  "description": "Politicians accused of communal crimes, and where to find them",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "minify": "uglifyjs js/template.js -c -m -o js/template.min.js; uglifyjs js/scripts.js -c -m -o js/scripts.min.js; yuicompressor css/styles.css -o css/styles.min.css; yuicompressor css/template.css -o css/template.min.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HindustanTimesLabs/party-time.git"
+  },
+  "author": "Harry Stevens <harryjosephstevens@gmail.com> (http://harryjstevens.com/)",
+  "license": "ISC",
+  "dependencies": {
+    "fsz": "^1.0.2",
+    "jeezy": "^1.8.0",
+    "jsz": "^1.2.0",
+    "party-time": "^2.0.3",
+    "prompt": "^1.0.0",
+    "resize-image": "0.0.4"
+  },
+  "devDependencies": {
+    "uglifyjs": "^2.4.11",
+    "yuicompressor": "^2.4.8"
+  }
+}
